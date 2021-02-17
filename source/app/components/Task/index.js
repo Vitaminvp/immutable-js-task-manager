@@ -133,7 +133,7 @@ export class Task extends PureComponent {
     render() {
         const { isTaskEditing, newMessage } = this.state;
         const { message, completed, favorite } = this.props;
-
+        console.log(this.props)
         const styles = cx(Styles.task, {
             [ Styles.completed ]: completed,
         });
